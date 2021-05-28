@@ -1,0 +1,54 @@
+name: Doggo
+
+walk-speed: 70
+
+sprite-sheet:
+  # The path to the character sprite-sheet
+  path: ../sprites/doggo.png
+  # The size of the tiles in the sprite-sheet in pixels
+  grid-size: [16, 16]
+  # The number of tiles wide and tall the sprite sheet is
+  tiles: [8, 19]
+
+actions:
+  walk:
+    sound: null
+    animations:
+      up:
+        frames:
+          - 144
+          - 145
+          - 146
+          - 147
+      down:
+        frames:
+          - 128
+          - 129
+          - 130
+          - 131
+      right:
+        frames: &walk-side-frames
+          - 136
+          - 137
+          - 138
+          - 139
+      left:
+        flip: true
+        frames: *walk-side-frames
+
+  idle:
+    sound: null
+    animations:
+      up:
+        frames:
+          - 144
+      down:
+        frames:
+          - 128
+      right:
+        frames:
+          - 136
+      left:
+        flip: true
+        frames:
+          - 136

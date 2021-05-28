@@ -1,0 +1,37 @@
+title: Bounty Bros.
+
+camera-size:
+  fixed-height: 200
+
+# The map to load for the game
+map: maps/map.ldtk
+
+splash-screen:
+  splash-image:
+    path: sprites/titleImage2.png
+    size: [176, 96]
+
+  # The level that the game loads as the background for the splash screen
+  background-level: SplashScreen
+
+  music: music/title.wav
+
+ui-theme:
+  default-font: fonts/cozette.bdf
+  panel:
+    image: ui/panel2.png
+    border-size: 12
+  button-up:
+    image: ui/button1-up.png
+    border-size: 4
+  button-down:
+    image: ui/button1-down.png
+    border-size: 4
+  checkbox:
+    checked: ui/checkbox-checked.png
+    unchecked: ui/checkbox-unchecked.png
+
+# The level that game starts when clicking the start button
+game-start-level: Outside
+
+player-character: characters/james.character.yaml

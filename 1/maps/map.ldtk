@@ -6239,12 +6239,12 @@
 			"externalRelPath": null,
 			"fieldInstances": [{
 				"__identifier": "music",
-				"__value": "music/track_01_adventure.ogg",
+				"__value": "music/outdoors.wav",
 				"__type": "String",
 				"defUid": 1529,
 				"realEditorValues": [{
 					"id": "V_String",
-					"params": ["music/track_01_adventure.ogg"]
+					"params": ["music/outdoors.wav"]
 				}]
 			}],
 			"layerInstances": [
@@ -14574,7 +14574,16 @@
 			"bgPivotY": 0.5,
 			"__bgPos": null,
 			"externalRelPath": null,
-			"fieldInstances": [{ "__identifier": "music", "__value": null, "__type": "String", "defUid": 1529, "realEditorValues": [] }],
+			"fieldInstances": [{
+				"__identifier": "music",
+				"__value": "music/indoors.wav",
+				"__type": "String",
+				"defUid": 1529,
+				"realEditorValues": [{
+					"id": "V_String",
+					"params": ["music/indoors.wav"]
+				}]
+			}],
 			"layerInstances": [
 				{
 					"__identifier": "Map_Collisions",
@@ -16330,10 +16339,13 @@
 			"externalRelPath": null,
 			"fieldInstances": [{
 				"__identifier": "music",
-				"__value": null,
+				"__value": "music/indoors.wav",
 				"__type": "String",
 				"defUid": 1529,
-				"realEditorValues": [null]
+				"realEditorValues": [{
+					"id": "V_String",
+					"params": ["music/indoors.wav"]
+				}]
 			}],
 			"layerInstances": [
 				{

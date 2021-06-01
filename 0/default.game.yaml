@@ -1,0 +1,6 @@
+title: Bounty Bros.
+map: maps/map2.ldtk
+starting-level: Outside
+player-character: characters/james.character.yaml
+# The number of pixels high the viewport should display
+viewport-height: 200

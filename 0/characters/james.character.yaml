@@ -1,0 +1,56 @@
+name: James
+
+walk-speed: 70
+
+collision-shape: james_collision.png
+
+sprite-sheet:
+  # The path to the character sprite-sheet
+  path: ../sprites/james.png
+  # The size of the tiles in the sprite-sheet in pixels
+  grid-size: [32, 32]
+  # The number of tiles wide and tall the sprite sheet is
+  tiles: [8, 19]
+
+actions:
+  walk:
+    sound: null
+    animations:
+      up:
+        frames:
+          - 10
+          - 11
+          - 12
+          - 9
+      down:
+        frames:
+          - 1
+          - 2
+          - 3
+          - 0
+      right:
+        frames: &walk-side-frames
+          - 6
+          - 7
+          - 8
+          - 5
+      left:
+        flip: true
+        frames: *walk-side-frames
+
+  idle:
+    sound: null
+    animations:
+      up:
+        frames:
+          - 9
+      down:
+        frames:
+          - 0
+      right:
+        frames:
+          - 4
+      left:
+        flip: true
+        frames:
+          - 4

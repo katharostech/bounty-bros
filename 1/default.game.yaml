@@ -10,9 +10,11 @@ splash-screen:
   splash-image:
     path: sprites/titleImage2.png
     size: [176, 96]
-  copyright: |
-    © 2021 Katharos Technology LLC.
-    All Rights Reserved.
+  copyright:
+    text: |
+      © 2021 Katharos Technology LLC.
+      All Rights Reserved.
+    font: fonts/tiny.bdf
 
   # The level that the game loads as the background for the splash screen
   background-level: SplashScreen

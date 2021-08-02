@@ -1,0 +1,60 @@
+name: Doug
+
+max-health: 10
+
+walk-speed: 1500
+
+collision-shape: doug_collision.png
+
+sprite-sheet:
+  # The path to the character sprite-sheet
+  path: ../sprites/doug.png
+  # The size of the tiles in the sprite-sheet in pixels
+  grid-size: [32, 32]
+  # The number of tiles wide and tall the sprite sheet is
+  tiles: [8, 8]
+
+actions:
+  walk:
+    sound: null
+    animations:
+      up:
+        frames:
+          - 10
+          - 11
+          - 12
+          - 9
+      down:
+        frames:
+          - 1
+          - 2
+          - 3
+          - 0
+      right:
+        frames:
+          - 6
+          - 7
+          - 8
+          - 5
+      left:
+        frames:
+          - 14
+          - 15
+          - 16
+          - 17
+
+  idle:
+    sound: null
+    animations:
+      up:
+        frames:
+          - 9
+      down:
+        frames:
+          - 0
+      right:
+        frames:
+          - 4
+      left:
+        frames:
+          - 13
